@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" integrity="sha512-ZDSPMa/JM1D+7kdg2x3BsruQ6T/JpJo3jWDWkCZsP+5yVyp1KfESqLI+7RqB5k24F7p2cV7i2YHh/890y6P6Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"> </script>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+            <div class="code">
+                <form  action="#" id="form">
+
+                    <div class="group">
+                    <label for="url">ENTER YOUR WEBSITE LINK</label>
+                    <input type="url" id="url" placeholder="enter your url" required>
+                    </div>
+
+                    <div class="group">
+                        <label for="url">Select your size</label>
+                        <select id="size">
+                        <option value="100">100x100</option>
+                        <option value="200">200x200</option> 
+                        <option value="300">300x300</option>
+                        <option value="400">400x400</option>
+                        </select>
+                    </div>
+
+                    <div class="group_color">
+                    <label for="darkcolor">Color</label>
+                    <input type="color" id="darkcolor"  value="#000000">
+                    </div>
+
+                    <div class="group_color">
+                        <label for="lightcolor">Color</label>
+                        <input type="color" id="lightcolor"  value="#FFFFFF">
+                    </div>
+                    <button type="submit">Generate  QR code</button>
+                     <a href="#" id="buttonsave" download>Save<i class="fa-solid fa-download"></i></a>
+                 
+                </form>
+            </div>
+
+        <div class="output">
+            <div id="qrcode">
+                <img src="image/1.png" id="img">
+            </div>
+            <div id="loading">
+                    <div id="spinner">
+                    </div>
+                    <p>Please wait</p>
+            </div>
+        </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"> </script>
+    <script src="script.js"></script>
+</body>
+</html>
